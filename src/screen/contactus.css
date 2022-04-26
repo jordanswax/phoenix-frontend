@@ -1,0 +1,79 @@
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+    font-family: 'Playfair+Display', sans-serif;
+    
+}
+
+.form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    height: 60%;
+    Transform: translate(75%,20%);
+    background: white;
+    z-index: 100000;
+    width: 1000px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.form-header {
+    color: black;
+    font-size: 40px;
+    margin-left: 200px;
+    padding-bottom: 20px;
+}
+.errorMsg {
+    padding-top: 10px;
+    color: pink;
+}
+
+.form-flexbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 40px;
+    box-sizing: border-box;
+    padding-inline: 200px;
+}
+.form-row#addressandsubject{
+    display: flex;
+    gap: 40px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
+.input-wrapper label{
+    color: grey;
+
+
+}
+.formflex-box p{
+    font-size: 20px;
+    color:lightblue;
+}
+.input-wrapper input,.input-wrapper textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding:10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+#message {
+    height: 250px;
+    resize: none;
+    
+}
+.input-wrapper input:focus,.input-wrapper textarea:focus{
+    border-bottom: 1px solid red;
+
+}
